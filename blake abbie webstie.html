@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake Abbie - Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            transition: background 3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: black;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            font-size: 1.5rem;
+            color: black;
+            text-align: center;
+            
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Blake Abbie <br><br></h1>
+    <h2><a href="mailto:b@blakeabbie.com ">email </a> </h2>
+
+    <script>
+        // JavaScript for changing background color every 10 seconds
+        const body = document.querySelector('body');
+        let isWhiteBackground = false;
+
+        function toggleBackground() {
+            body.style.background = isWhiteBackground ? 'black' : 'white';
+            h1.style.color = isWhiteBackground ? 'black' : 'white';
+            isWhiteBackground = !isWhiteBackground;
+        }
+
+        setInterval(toggleBackground, 400); // 0.4 seconds
+    </script>
+</body>
+</html>
